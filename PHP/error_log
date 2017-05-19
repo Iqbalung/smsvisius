@@ -1,0 +1,8 @@
+[30-Apr-2016 03:40:13 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Veritrans Error (): ' in /home/greatcommercesho/public_html/PHP/Veritrans/ApiRequestor.php:96
+Stack trace:
+#0 /home/greatcommercesho/public_html/PHP/Veritrans/ApiRequestor.php(17): Veritrans_ApiRequestor::remoteCall('https://api.san...', '<your serverkey...', false, false)
+#1 /home/greatcommercesho/public_html/PHP/Veritrans/Transaction.php(17): Veritrans_ApiRequestor::get('https://api.san...', '<your serverkey...', false)
+#2 /home/greatcommercesho/public_html/PHP/Veritrans/Notification.php(20): Veritrans_Transaction::status(NULL)
+#3 /home/greatcommercesho/public_html/PHP/notification_handler.php(6): Veritrans_Notification->__construct()
+#4 {main}
+  thrown in /home/greatcommercesho/public_html/PHP/Veritrans/ApiRequestor.php on line 96
